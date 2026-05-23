@@ -48,7 +48,7 @@ public class Program
             lifetime.ApplicationStopped.WaitHandle.WaitOne();
         });
 
-        // Required when HiddenWindowOptions.InstallOnDemand is set to false.
+        // Required when InputHookOptions.InstallOnDemand is set to false.
         //var inputHook = host.Services.GetRequiredService<InputHook>();
         //await inputHook.InstallAsync();
 
