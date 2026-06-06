@@ -43,7 +43,7 @@ Registers a native handler for processing keyboard and/or mouse events.
 
 The built-in handlers are `DefaultKeyboardHandler` and `DefaultMouseHandler`. Custom handlers can be created by deriving from `InputHandler`.
 
-Handlers with lower `priority` values execute first. Defaults to `0`.
+Handlers with lower `priority` values execute first.
 
 Dispose the returned `IDisposable` to unregister the handler.
 

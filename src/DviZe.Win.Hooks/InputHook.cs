@@ -33,7 +33,7 @@ public sealed class InputHook : IAsyncDisposable
     }
 
     /// <summary>
-    /// Installs the hook. Only valid when <c>InputHookOptions.InstallOnDemand</c> is <c>false</c>.
+    /// Installs the keyboard and/or mouse hook. Only valid when <c>InputHookOptions.InstallOnDemand</c> is <c>false</c>.
     /// </summary>
     /// <exception cref="InvalidOperationException" />
     /// <exception cref="ObjectDisposedException" />
