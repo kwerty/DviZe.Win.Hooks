@@ -1,10 +1,10 @@
 #include "pch.h"
-#include "main.h"
 #include "InputHandler.h"
+#include "main.h"
+#include <algorithm>
 #include <unordered_map>
 #include <vector>
 #include <Windows.h>
-#include <algorithm>
 
 using namespace Kwerty::DviZe::Win;
 using namespace Kwerty::DviZe::Win::Hooks;

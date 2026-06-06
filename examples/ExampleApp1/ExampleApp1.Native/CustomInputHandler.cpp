@@ -1,6 +1,8 @@
 #include "pch.h"
 #include <Windows.h>
 
+using namespace Kwerty::DviZe::Win::Hooks;
+
 namespace
 {
     struct HandlerState
@@ -44,7 +46,7 @@ static bool MouseProc(UINT msg, MSLLHOOKSTRUCT* param, void* state)
 
 namespace ExampleApp1
 {
-    public ref class CustomInputHandler sealed : public Kwerty::DviZe::Win::Hooks::InputHandler
+    public ref class CustomInputHandler sealed : public InputHandler
     {
         HandlerState* pState;
 

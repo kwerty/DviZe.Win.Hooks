@@ -1,6 +1,6 @@
 #include "pch.h"
-#include "main.h"
 #include "InputHandler.h"
+#include "main.h"
 #include <msclr/gcroot.h>
 #include <Windows.h>
 
