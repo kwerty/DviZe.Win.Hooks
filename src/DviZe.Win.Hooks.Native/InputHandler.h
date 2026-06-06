@@ -11,7 +11,7 @@ namespace Kwerty::DviZe::Win::Hooks
 		initonly unsigned int id = nextId++;
 		initonly void* keyboardProc;
 		initonly void* mouseProc;
-		bool initialised;
+		bool initialized;
 
 	protected:
 		InputHandler(void* keyboardProc, void* mouseProc)
@@ -19,12 +19,12 @@ namespace Kwerty::DviZe::Win::Hooks
 		{
 		}
 
-		virtual void* OnInitialising()
+		virtual void* OnInitializing()
 		{
 			return nullptr;
 		}
 
-		virtual void OnDeinitialising()
+		virtual void OnDeinitializing()
 		{
 		}
 
@@ -46,14 +46,14 @@ namespace Kwerty::DviZe::Win::Hooks
 		}
 
 	internal:
-		void* Initialise()
+		void* Initialize()
 		{
-			return OnInitialising();
+			return OnInitializing();
 		}
 
-		void Deinitialise()
+		void Deinitialize()
 		{
-			OnDeinitialising();
+			OnDeinitializing();
 		}
 	};
 }

@@ -139,14 +139,14 @@ namespace Kwerty::DviZe::Win::Hooks
 
         static void RegisterHandler(InputHandler^ handler, int sessionId, int priority)
         {
-            if (handler->initialised)
+            if (handler->initialized)
             {
                 throw gcnew InvalidOperationException();
             }
 
-            handler->initialised = true;
+            handler->initialized = true;
             
-            auto state = handler->Initialise();
+            auto state = handler->Initialize();
 
             auto id = handler->id;
             handlers[id] = HandlerInfo
@@ -163,7 +163,7 @@ namespace Kwerty::DviZe::Win::Hooks
 
         static void UnregisterHandler(InputHandler^ handler)
         {
-            handler->Deinitialise();
+            handler->Deinitialize();
 
             auto id = (handler->id);
             handlers.erase(id);

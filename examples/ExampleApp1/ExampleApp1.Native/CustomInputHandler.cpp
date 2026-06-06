@@ -57,7 +57,7 @@ namespace ExampleApp1
         }
 
     protected:
-        virtual void* OnInitialising() override
+        virtual void* OnInitializing() override
         {
             pState = new HandlerState
             {
@@ -66,7 +66,7 @@ namespace ExampleApp1
             return pState;
         }
 
-        virtual void OnDeinitialising() override
+        virtual void OnDeinitializing() override
         {
             delete pState;
         }

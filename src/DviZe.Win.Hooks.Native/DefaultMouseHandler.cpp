@@ -98,7 +98,7 @@ namespace Kwerty::DviZe::Win::Hooks
         }
 
     protected:
-        virtual void* OnInitialising() override
+        virtual void* OnInitializing() override
         {
             pState = new HandlerState
             {
@@ -108,7 +108,7 @@ namespace Kwerty::DviZe::Win::Hooks
             return pState;
         }
 
-        virtual void OnDeinitialising() override
+        virtual void OnDeinitializing() override
         {
             delete pState;
         }
