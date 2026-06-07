@@ -48,6 +48,7 @@ namespace ExampleApp1
 {
     public ref class CustomInputHandler sealed : public InputHandler
     {
+    private:
         HandlerState* pState;
 
     public:
